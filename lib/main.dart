@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.blue,
             foregroundColor: Colors.white,
           ),
-          cardTheme: CardTheme(
+          cardTheme: CardThemeData( // ← Cambiado aquí
             elevation: 2,
             margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             shape: RoundedRectangleBorder(
@@ -44,4 +44,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-} 
+}

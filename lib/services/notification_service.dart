@@ -47,12 +47,11 @@ class NotificationService {
         ),
       ),
       androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-      uiLocalNotificationDateInterpretation:
-          UILocalNotificationDateInterpretation.absoluteTime,
+      matchDateTimeComponents: DateTimeComponents.time, // ← nuevo
     );
   }
 
   Future<void> cancelNotification(int taskId) async {
     await flutterLocalNotificationsPlugin.cancel(taskId);
   }
-} 
+}
