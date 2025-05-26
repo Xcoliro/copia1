@@ -1,0 +1,36 @@
+name: copia1
+description: "A new Flutter project." # Puedes cambiar esta descripción si quieres
+publish_to: 'none'
+
+version: 1.0.0+1 # Usamos la versión de tu proyecto original
+
+environment:
+  sdk: '>=3.0.0 <4.0.0' # Usamos el rango del proyecto original, ya que tu sdk es 3.5.3 y está dentro.
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  provider: ^6.0.5
+  intl: ^0.18.1
+  flutter_local_notifications: ^16.1.0
+  table_calendar: ^3.0.9
+  fl_chart: ^0.65.0
+  shared_preferences: ^2.2.2
+  timezone: ^0.9.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0 # Mantenemos la versión más reciente de flutter_lints del proyecto nuevo.
+
+flutter:
+  uses-material-design: true
+
+  # Agrega aquí la sección de assets si tu proyecto original los usa
+  # Por ejemplo:
+  # assets:
+  #   - assets/images/
+  #   - assets/icons/
